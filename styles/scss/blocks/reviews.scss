@@ -1,0 +1,129 @@
+.section__review {
+  background: url("../../img/background-reviews.png") left bottom no-repeat;
+  position: relative;
+  @include tablets {
+    background: url("../../img/background-reviews.png") left bottom -100% no-repeat;
+  }
+
+  &:after {
+    content: url("../../img/berryes-reviews.png");
+    position: absolute;
+    bottom: -rem(20px);
+    left: 2%;
+  }
+  &::before {
+    content: url("../../img/strawberry.png");
+    position: absolute;
+    top: rem(10px);
+    right: rem(1px);
+  }
+}
+
+.reviews__display {
+  background: #f7faf9 url("../../img/review-back.png") right top no-repeat;
+  padding: rem(50px) rem(45px) rem(35px);
+  margin-bottom: rem(20px);
+  position: relative;
+  overflow: hidden;
+  min-height: 280px;
+}
+
+.reviews__display-inner {
+  display: flex;
+  margin: 0 auto;
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.reviews__avatar {
+  width: rem(254px);
+  height: rem(260px);
+  @include tablets {
+    width: rem(132px);
+    height: rem(130px);
+  }
+}
+.reviews__avatar-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.reviews__content {
+  flex: 1;
+  margin-left: rem(20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.reviews__title {
+  font-size: rem(30px);
+  font-weight: bold;
+  color: black;
+}
+
+.reviews__text {
+  margin-bottom: rem(36px);
+  padding-right: rem(40px);
+}
+
+.reviews__author {
+  font-size: rem(18px);
+  font-weight: bold;
+  color: black;
+}
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
+}
+
+.interactive-avatar {
+  width: rem(80px);
+  height: rem(80px);
+  border: rem(6px) solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  transition: 0.8s;
+}
+.interactive-avatar.active {
+  border-color: #0b4d3c;
+}
+
+.interactive-avatar-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+.interactive-avatar-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.reviews__item.active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
+}

@@ -1,0 +1,32 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+// breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+/* colors */
+$blue: #61c4d9;
+$darkGreen: #0b4d3c;
+
+/* media */
+@import "layouts/media.scss";
+
+/* normalize */
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css";
+
+/* setups */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+@import "layouts/layout.scss";
+@import "blocks/hero.scss";
+@import "blocks/btn.scss";
+@import "blocks/section.scss";
+@import "blocks/composition.scss";
+@import "blocks/team.scss";
+@import "blocks/reviews.scss";
+@import "blocks/menu.scss";
+@import "blocks/menu-video.scss";
+@import "blocks/order.scss";
+@import "blocks/footer.scss";
+@import "blocks/hamburger.scss";
+@import "blocks/modal.scss";

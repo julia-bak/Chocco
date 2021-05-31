@@ -1,0 +1,10 @@
+.section__menu {
+  background: url("../../img/menu.png") 100% 100% no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.menu__title {
+  text-align: left;
+  color: white;
+}

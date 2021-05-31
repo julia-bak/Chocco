@@ -1,0 +1,77 @@
+.section__menu {
+  background: url("../../img/menu.png") center center/cover no-repeat;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.menu__title {
+  text-align: left;
+  color: white;
+  padding-top: 5%;
+  padding-left: 5%;
+  @include phones {
+    display: none;
+  }
+}
+
+.products-menu {
+  position: relative;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.products-menu__item {
+  display: flex;
+}
+
+.products-menu__title {
+  position: relative;
+  width: 100px;
+  text-decoration: none;
+}
+
+.products-menu__content {
+  background: rgba(47, 50, 52, 0.9);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.7s;
+  height: 100vh;
+}
+
+.products-menu__container {
+  padding: 40px 73px 45px 26px;
+}
+.products-menu__close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  border: none;
+  background: transparent;
+  width: 30px;
+}
+.products-menu__img {
+  object-fit: cover;
+  height: 100vh;
+}
+
+.products-menu__text {
+  transform: rotate(-90deg);
+  transform-origin: left top 0;
+
+  right: -510px;
+  bottom: 0;
+  font-size: rem(46px);
+  font-weight: bold;
+  max-height: 100vh;
+  min-width: 600px;
+  padding-left: 30px;
+  padding-top: 5px;
+}
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+}

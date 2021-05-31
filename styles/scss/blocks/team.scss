@@ -1,0 +1,87 @@
+.team {
+  display: flex;
+  align-items: flex-start;
+  text-align: center;
+  height: 100vh;
+}
+
+.team__title {
+  padding-top: 10%;
+  @include tablets {
+    padding-top: 0;
+  }
+}
+.team__member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team__member-img {
+  margin-bottom: rem(25px);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.team__member-name {
+  background: url("../../icons/triangle.png") no-repeat 100% center;
+  font-size: rem(21px);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  padding-right: rem(10px);
+  margin-bottom: rem(10px);
+}
+
+.team__item.active .team__member-name {
+  background: url("../../icons/triangle-top.png") right no-repeat;
+}
+
+.team__content-block {
+  max-width: rem(200px);
+}
+
+.team__member-prof {
+  font-size: rem(18px);
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+.team__content {
+  position: absolute;
+  overflow: hidden;
+  transition: 0.3s;
+  height: 0;
+  top: 100%;
+}
+
+.team--version--desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include tablets {
+    display: none;
+  }
+}
+
+.team--version--mobile {
+  display: none;
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+button {
+  border: none;
+}
+
+.team__item {
+  @include tablets {
+    margin-bottom: rem(10px);
+  }
+}

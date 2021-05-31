@@ -1,0 +1,132 @@
+.composition {
+  background-color: #f8faf9;
+}
+
+.composition-section {
+  position: relative;
+
+  &::after {
+    content: url("../../img/blueberry.png");
+    position: absolute;
+    bottom: -50px;
+    right: rem(0px);
+  }
+  &::before {
+    content: url("../../img/leaf-on-content.png");
+    position: absolute;
+    bottom: -30%;
+    right: rem(0px);
+  }
+}
+
+.composition__title {
+  font-size: rem(36px);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: rem(30px);
+  @include tablets {
+    text-align: center;
+  }
+}
+.products__slider {
+  padding-top: 20%;
+  position: relative;
+
+  .bx-wrapper {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+.product__container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+
+  @include tablets {
+    flex-direction: column;
+  }
+}
+.compos {
+  width: 50%;
+  margin: 0 auto;
+  @include tablets {
+    width: 80%;
+  }
+}
+
+.composition__desc-img {
+  @include tablets {
+    display: none;
+  }
+}
+
+.composition__text {
+  margin-bottom: rem(40px);
+  @include tablets {
+    text-align: center;
+  }
+}
+
+.composition__image {
+  width: 40%;
+}
+.composition__charact {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: rem(40px);
+  @include tablets {
+    justify-content: center;
+    text-align: center;
+  }
+}
+.composition__kal {
+  margin-right: rem(60px);
+}
+.composition__price {
+  font-size: rem(54px);
+  margin-right: rem(35px);
+  line-height: 1;
+  color: rgb(21, 21, 21);
+  padding-bottom: 50px;
+  @include tablets {
+    // width: 30%;
+    margin: 0 auto;
+  }
+}
+
+b {
+  color: black;
+}
+
+.composition__price-btn {
+  display: flex;
+  max-height: rem(55px);
+  align-items: center;
+  justify-content: flex-start;
+  @include tablets {
+    justify-content: center;
+    align-items: start;
+  }
+}
+
+.products-slider__arrow {
+  background: url("../../icons/arrow.svg") center center no-repeat;
+  background-size: contain;
+  display: block;
+  width: rem(13px);
+  height: rem(28px);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  &--prev {
+    left: 0;
+    transform: rotate(-180deg);
+  }
+  &--next {
+    right: 0;
+  }
+}

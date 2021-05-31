@@ -1,0 +1,32 @@
+.footer {
+  min-height: rem(95px);
+  max-width: rem(940px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: rem(20px) rem(10px);
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+    padding: rem(20px) 0 0 0;
+  }
+}
+
+.social {
+  min-height: rem(50px);
+  display: flex;
+  padding-top: rem(10px);
+}
+.social-link {
+  height: rem(20px);
+  width: rem(20px);
+  margin-right: rem(20px);
+}
+
+.contacts__adress {
+  color: black;
+}
+
+.contacts__phone {
+  color: #0b4d3c;
+}
